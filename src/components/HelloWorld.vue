@@ -16,6 +16,7 @@ const count = ref(0)
     <p>
       Edit
       <code>components/HelloWorld.vue</code> to test HMR
+      <div class="text-primary/50">半透明文本</div>
     </p>
   </div>
 

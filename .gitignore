@@ -1,24 +1,51 @@
-# Logs
-logs
+# 依赖目录
+node_modules/
+.pnpm-store/  # 如果使用 pnpm
+.yarn/        # 如果使用 Yarn
+dist/         # 生产构建输出目录
+
+# 本地开发缓存
+.temp/
+.cache/
+*.local
+
+# 环境变量文件（敏感信息）
+.env
+.env.*
+!.env.example  # 保留示例文件
+
+# 日志文件
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
+# 编辑器/IDE 相关
+.idea/
+.vscode/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# 操作系统自动生成的文件
+.DS_Store
+Thumbs.db
+
+# Vite/Vue 特定文件
+**/__snapshots__/
+*.tsbuildinfo
+
+# 测试相关
+coverage/
+.nyc_output/
+
+# 调试文件
+debug/
+*.pid
+
+# 其他
+*.bak
+*.tmp
