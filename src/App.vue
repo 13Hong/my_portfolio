@@ -8,6 +8,7 @@
     <LatestProjSection />
     <ContactSection />
     <TestimonialsSection />
+    <Footer />
   </div>
 </template>
 
@@ -22,4 +23,5 @@ const ExperienceAndSkills = defineAsyncComponent(() => import('@/components/Expe
 const TestimonialsSection = defineAsyncComponent(() => import('@/components/TestimonialsSection.vue'))
 const ContactSection = defineAsyncComponent(() => import('@/components/ContactSection.vue'))
 const LatestProjSection = defineAsyncComponent(() => import('@/components/LatestProjSection.vue'))
+const Footer = defineAsyncComponent(() => import('@/components/Footer.vue'))
 </script>
